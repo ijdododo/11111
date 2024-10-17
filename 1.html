@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两列flex布局</title>
+    <!-- 两列布局  两个盒子 -->
+     <!-- 22001040625 --------------------------------------------------------------------------- -->
+   <style>
+       ul,h2,h3{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .main{
+        border:1px solid #053f7f;
+        font-size: 12px;
+        display: flex;
+        /* 	规定灵活的项目在必要的时候拆行或拆列。 */
+        flex-wrap: wrap;
+        flex-direction: row;
+        }
+        .left{
+            width: 243px;
+            height: 190px;
+            float: left;
+            /* 盒子内边距 */
+            padding-left: 7px;
+        }
+        .right{
+            /* width: 290px; */
+            height: 100%;
+            float: left;
+            padding-left: 20px;
+        }
+        .left h2{
+        font-size: 24px;
+        color: #fff;
+        background-color: #053f7f;
+        height: 40px;
+        text-align:center;
+        line-height: 40px;
+        margin-bottom: 6px;
+        margin-top: 6px;
+        }
+
+        .right h3{
+            font-size: 16px;
+            line-height: 22px;
+            color: #053f7f;
+            border-bottom: 1px solid #053f7f;
+            text-align: center;
+            line-height: 33px;
+            margin-bottom: 6px;
+        }
+        .line{
+            float:left;
+            height: 10px;
+            width:10px;
+            border-bottom:1px solid #053f7f;
+            margin-top: 3px;
+        }
+        .squ{
+            line-height: 20px;
+            color: #053f7f;
+            text-align: center;
+            margin-top: 3px;
+            float: left;
+            height: 20px;
+            width:70px;
+            border-top: 3px;
+            border: 1px solid #053f7f; /* 设置边框样式 */
+            padding: 1px; /* 内边距，确保文字与边框之间有空隙 */
+        }
+        .right ul {
+        padding-left: 9px;
+        line-height: 20px;
+
+        }
+        .right ul li a{
+            color: #053f7f;
+            line-height: 20px;
+            display: block;
+        }
+        .right a:hover
+        {
+            background-color: red;
+        font-size:bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h2>前端学习技术</h2>
+            <div class="squ">视频教程</div>
+            <div class="line"></div>
+            <div class="squ">视频教程</div>
+            <div class="line"></div>
+            <div class="squ">视频教程</div>   
+            <div class="squ">视频教程</div>
+            <div class="line"></div>
+            <div class="squ">视频教程</div>
+            <div class="line"></div>
+            <div class="squ">视频教程</div>     
+            <div class="squ">视频教程</div>
+            <div class="line"></div>
+            <div class="squ">视频教程</div>
+            <div class="line"></div>
+            <div class="squ">视频教程</div>                 
+        </div>
+        <div class="right">
+            <h3>流行的JavaScript框架：Vue.js</h3>
+            <ul>
+                <li><a href="#">高级CSS应用技巧：圆角矩形和a:hover</a></li>
+                <li><a href="#">高级CSS应用技巧：圆角矩形和a:hover</a></li>
+                <li><a href="#">高级CSS应用技巧：圆角矩形和a:hover</a></li>
+                <li><a href="#">高级CSS应用技巧：圆角矩形和a:hover</a></li>
+                <li><a href="#">高级CSS应用技巧：圆角矩形和a:hover</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
